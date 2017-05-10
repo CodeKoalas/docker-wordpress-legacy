@@ -32,6 +32,10 @@ $table_prefix  = 'wp_';
 
 define('WP_DEBUG', false);
 
+if (file_exists(dirname(__DIR__) . '/config/application.php')) {
+  require_once(dirname(__DIR__) . '/config/application.php');
+}
+
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
