@@ -18,14 +18,14 @@ define('DB_HOST',	'{{getenv "MYSQL_SERVER" }}');
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
-define('AUTH_KEY',		'{{gentenv "AUTH_KEY" }}');
-define('SECURE_AUTH_KEY',	'{{gentenv "SECURE_AUTH_KEY" }}');
-define('LOGGED_IN_KEY',		'{{gentenv "LOGGED_IN_KEY" }}');
-define('NONCE_KEY',		'{{gentenv "NONCE_KEY" }}');
-define('AUTH_SALT',		'{{gentenv "AUTH_SALT" }}');
-define('SECURE_AUTH_SALT',	'{{gentenv "SECURE_AUTH_SALT" }}');
-define('LOGGED_IN_SALT',	'{{gentenv "LOGGED_IN_SALT" }}');
-define('NONCE_SALT',		'{{gentenv "NONCE_SALT" }}');
+define('AUTH_KEY',		'{{getenv "AUTH_KEY" }}');
+define('SECURE_AUTH_KEY',	'{{getenv "SECURE_AUTH_KEY" }}');
+define('LOGGED_IN_KEY',		'{{getenv "LOGGED_IN_KEY" }}');
+define('NONCE_KEY',		'{{getenv "NONCE_KEY" }}');
+define('AUTH_SALT',		'{{getenv "AUTH_SALT" }}');
+define('SECURE_AUTH_SALT',	'{{getenv "SECURE_AUTH_SALT" }}');
+define('LOGGED_IN_SALT',	'{{getenv "LOGGED_IN_SALT" }}');
+define('NONCE_SALT',		'{{getenv "NONCE_SALT" }}');
 
 
 $table_prefix  = 'wp_';
